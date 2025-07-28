@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ServicesCard = ({ image, title, description, linkUrl = "#" }) => {
   return (
     <div className="bg-white hover:bg-secondary group rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col h-full border border-gray-100">

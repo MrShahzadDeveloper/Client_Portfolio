@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from './HeroSection'
 import Banner from '../components/Banner'
 import Services from './Services'

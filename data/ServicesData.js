@@ -1,6 +1,6 @@
 // servicesData.js
-const seoServices = {
-  onPageSeo: {
+const seoServices = [
+  {
     id: "0",
     title: "On-Page SEO Optimization for Explosive Google Rankings",
     cardTitle: "Precision On-Page Optimization",
@@ -17,7 +17,7 @@ const seoServices = {
       "With years of hands-on experience in SEO, I bring data-driven strategies tailored specifically to your niche. I combine technical accuracy with creative content structuring that not only satisfies search engine bots but also engages human visitors. I don't just optimize pages—I elevate their potential."
   },
 
-  offPageSeo: {
+  {
     id: "1",
     title: "Revenue-Boosting Off-Page SEO & Authority Link Building",
     cardTitle: "Authority Link Building",
@@ -34,7 +34,7 @@ const seoServices = {
       "I don't chase spammy backlinks—I earn them through credibility and precision outreach. My campaigns are personalized, data-backed, and focused on building a backlink profile that adds real value. With me, you get results that are both measurable and lasting."
   },
 
-  technicalSeo: {
+  {
     id: "2",
     title: "Game-Changing Technical SEO for Lightning-Fast Performance",
     cardTitle: "Technical SEO Fixes",
@@ -51,7 +51,7 @@ const seoServices = {
       "Technical SEO is where I thrive. I diagnose problems like a search engine does—deeply, precisely, and proactively. My fixes are clean, future-proof, and aligned with Google's evolving standards. Let me turn your site into a technically flawless machine."
   },
 
-  localSeo: {
+  {
     id: "3",
     title: "Local SEO Domination & Google Business Profile Growth",
     cardTitle: "Google Maps Optimization",
@@ -68,7 +68,7 @@ const seoServices = {
       "I understand the power of local intent. My localized strategies are fine-tuned to bring in real customers from your area—not just traffic. Whether you're competing in a small town or a crowded city, I help you own your neighborhood digitally."
   },
 
-  guestPostArticles: {
+  {
     id: "4",
     title: "Elite Guest Posting & Niche-Relevant Backlink Placement",
     cardTitle: "Guest Post Outreach",
@@ -85,7 +85,7 @@ const seoServices = {
       "I don't write generic posts—I craft stories that resonate. My guest articles are strategically written to position you as a thought leader while earning powerful links from respected platforms."
   },
 
-  articleWriting: {
+  {
     id: "5",
     title: "SEO-Optimized Content Writing That Converts & Ranks",
     cardTitle: "SEO Blog Writing",
@@ -102,7 +102,7 @@ const seoServices = {
       "I combine storytelling with strategy. My writing is not only grammatically perfect but also optimized to rank, engage, and convert. You don't just get content—you get a content asset."
   },
 
-  siteAudit: {
+  {
     id: "6",
     title: "Full-Spectrum SEO Audit for Maximum Ranking Impact",
     cardTitle: "Full Site SEO Audit",
@@ -119,7 +119,7 @@ const seoServices = {
       "My audits are not automated PDFs—they're handcrafted, insightful, and personalized. I deliver real answers backed by experience, not just data. You'll walk away with clarity and a confident plan."
   },
 
-  technicalSeoReview: {
+  {
     id: "7",
     title: "Advanced Technical SEO Review for Scalable Growth",
     cardTitle: "Advanced SEO Diagnostics",
@@ -136,7 +136,7 @@ const seoServices = {
       "I speak fluent technical SEO—fluent enough to work alongside developers, yet clear enough to advise business owners. I bring the perfect balance of code, strategy, and clarity."
   },
 
-  competitorAnalysis: {
+  {
     id: "8",
     title: "Competitor SEO Intelligence for Strategic Domination",
     cardTitle: "Competitor SEO Analysis",
@@ -152,6 +152,6 @@ const seoServices = {
     whyChooseMe:
       "I don't just analyze competitors—I exploit their weaknesses and capitalize on opportunities. With my insights, you won't just match the competition—you'll surpass them."
   }
-};
+]
 
 export default seoServices;
