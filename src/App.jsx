@@ -22,7 +22,7 @@ function App() {
       gsap.fromTo(
         pageRef.current,
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }
+        { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
       );
     });
 
@@ -34,7 +34,7 @@ function App() {
     gsap.from(navbarRef.current, {
       y: -100,
       opacity: 0,
-      duration: 0.8,
+      duration: 1,
       ease: 'power2.out',
     });
   }, []);

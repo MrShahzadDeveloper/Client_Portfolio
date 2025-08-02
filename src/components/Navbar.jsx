@@ -21,14 +21,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-6 md:px-12 lg:px-20 xl:px-28 py-4 w-full z-50 relative shadow-sm">
+    <nav className="px-6 md:px-12 lg:px-10 xl:px-28 py-4 w-full z-50 relative shadow-sm">
       <div className="flex items-center justify-between flex-wrap">
         {/* Logo */}
         <div className="flex items-center">
           <img
             src={logo}
             alt="Logo"
-            className="w-16 cursor-pointer"
+            className="w-8 md:w-16 cursor-pointer"
             onClick={() => navigate("/")}
           />
         </div>

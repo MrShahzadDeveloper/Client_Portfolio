@@ -14,21 +14,28 @@ import logo10 from "../assets/b10.svg";
 
 const Banner = () => {
   return (
-    <div className="bg-secondary py-4 overflow-hidden mb-32">
-      <h1 className="text-5xl text-primary font-extrabold text-center py-10  ">LINKS I’VE LANDED</h1>
+    <div className="bg-secondary py-6 overflow-hidden mb-20 sm:mb-32">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl text-primary font-extrabold text-center px-4 py-6 sm:py-10">
+        LINKS I’VE LANDED
+      </h1>
+
       <Marquee
         gradient={false}
-        speed={130}
+        speed={100}
         direction="left"
         pauseOnHover={true}
-        className="py-10 "
+        className="py-4"
       >
-        {[logo1, logo2, logo3, logo4, logo5,logo6 ,logo7, logo8 , logo9 , logo10 , logo1, logo2].map((logo, index) => (
+        {[
+          logo1, logo2, logo3, logo4, logo5,
+          logo6, logo7, logo8, logo9, logo10,
+          logo1, logo2,
+        ].map((logo, index) => (
           <img
             key={index}
             src={logo}
-            alt={`Company Logo ${index + 1}`}
-            className="h-24 mx-8 bg-primary p-5 rounded-xl "
+            alt={`Logo ${index + 1}`}
+            className="h-16 sm:h-20 md:h-24 mx-4 sm:mx-6 md:mx-8 bg-primary p-3 sm:p-4 rounded-xl transition-transform hover:scale-105"
           />
         ))}
       </Marquee>

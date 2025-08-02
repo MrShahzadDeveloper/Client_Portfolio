@@ -1,13 +1,15 @@
-import HeroSection from './HeroSection'
+import HeroSection from '../components/HeroSection'
 import Banner from '../components/Banner'
-import Services from './Services'
+import ServicesSection from '../components/ServicesSection'
+import StatsBanner from '../components/StatsBanner'
 
 const Home = () => {
   return (
     <div>
       <HeroSection />
       <Banner />
-      <Services />
+      <ServicesSection />
+      <StatsBanner />
     </div>
   )
 }

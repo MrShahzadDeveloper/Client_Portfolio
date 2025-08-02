@@ -1,9 +1,12 @@
+import seo from "../src/assets/seo.jpg"
+
 // servicesData.js
 const seoServices = [
   {
     id: "0",
     title: "On-Page SEO Optimization for Explosive Google Rankings",
     cardTitle: "Precision On-Page Optimization",
+    img: seo ,
     description:
       "Maximize your website's visibility by fine-tuning its content, structure, and technical elements. Our On-Page SEO service ensures every page is optimized for user intent and search engine algorithms. From crafting compelling meta tags to internal linking strategies, keyword targeting, and content refinement — we align your pages with Google's latest ranking signals for sustainable traffic growth.",
     benefits: [
@@ -21,6 +24,7 @@ const seoServices = [
     id: "1",
     title: "Revenue-Boosting Off-Page SEO & Authority Link Building",
     cardTitle: "Authority Link Building",
+    img: seo ,
     description:
       "Off-Page SEO is the backbone of building online authority and credibility. My service focuses on acquiring authoritative backlinks, creating brand mentions, leveraging influencer partnerships, and driving social signals. These efforts build trust with search engines, enhance brand awareness, and push your rankings beyond competitors.",
     benefits: [
@@ -37,7 +41,7 @@ const seoServices = [
   {
     id: "2",
     title: "Game-Changing Technical SEO for Lightning-Fast Performance",
-    cardTitle: "Technical SEO Fixes",
+    cardTitle: "Technical SEO Fixes",img: seo ,
     description:
       "Behind every high-ranking website lies a robust technical foundation. My Technical SEO service ensures your site is fast, mobile-optimized, crawlable, and indexable. From fixing crawl errors and broken links to improving Core Web Vitals, I fine-tune every backend detail that impacts performance, speed, and rankings.",
     benefits: [
@@ -55,6 +59,7 @@ const seoServices = [
     id: "3",
     title: "Local SEO Domination & Google Business Profile Growth",
     cardTitle: "Google Maps Optimization",
+    img: seo ,
     description:
       "Capture more customers in your local area with my targeted Local SEO services. I optimize your Google Business Profile, build consistent citations, and integrate geo-targeted keywords to rank your business in local searches, maps, and voice queries. Whether you run a single shop or multiple locations, I make sure your business gets seen by nearby prospects.",
     benefits: [
@@ -72,6 +77,7 @@ const seoServices = [
     id: "4",
     title: "Elite Guest Posting & Niche-Relevant Backlink Placement",
     cardTitle: "Guest Post Outreach",
+    img: seo ,
     description:
       "Expand your reach with my Guest Posting services. I craft high-quality, insightful articles tailored to industry-specific websites and blogs. These posts include dofollow backlinks to your site and help you establish authority, connect with new audiences, and improve your domain's SEO power.",
     benefits: [
@@ -89,6 +95,7 @@ const seoServices = [
     id: "5",
     title: "SEO-Optimized Content Writing That Converts & Ranks",
     cardTitle: "SEO Blog Writing",
+    img: seo ,
     description:
       "Content is the currency of the web—and I write it to convert. My articles are keyword-optimized, informative, engaging, and tailored to your audience's intent. Whether you need blog posts, product descriptions, or thought-leadership pieces, I deliver compelling content that ranks and retains.",
     benefits: [
@@ -106,6 +113,7 @@ const seoServices = [
     id: "6",
     title: "Full-Spectrum SEO Audit for Maximum Ranking Impact",
     cardTitle: "Full Site SEO Audit",
+    img: seo ,
     description:
       "A successful SEO campaign starts with clarity. My comprehensive SEO Site Audit covers technical health, on-page quality, content gaps, backlink profiles, and performance insights. You'll receive a detailed, actionable report outlining what's working, what's holding you back, and how to fix it.",
     benefits: [
@@ -123,6 +131,7 @@ const seoServices = [
     id: "7",
     title: "Advanced Technical SEO Review for Scalable Growth",
     cardTitle: "Advanced SEO Diagnostics",
+    img: seo ,
     description:
       "This is more than a basic audit—this is a deep diagnostic scan of your website's technical backbone. I analyze everything from crawl depth and canonical issues to schema validation and Core Web Vitals. This service is ideal for developers, webmasters, and site owners looking to scale cleanly and efficiently.",
     benefits: [
@@ -140,6 +149,7 @@ const seoServices = [
     id: "8",
     title: "Competitor SEO Intelligence for Strategic Domination",
     cardTitle: "Competitor SEO Analysis",
+    img: seo ,
     description:
       "Stay one step ahead by understanding your competition. I dig into your competitors' SEO strategies—uncovering their top-ranking content, backlink tactics, keyword focus, and technical strengths. With these insights, we reverse-engineer a winning SEO plan that outpaces them in the SERPs.",
     benefits: [

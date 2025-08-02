@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Button from '../components/Button';
+import Button from './Button';
 import heroImg from '../assets/heroImg.png';
 import { FaBusinessTime } from "react-icons/fa";
 import { gsap } from 'gsap';
@@ -45,7 +45,7 @@ const TypingText = () => {
   }, []);
 
   return (
-    <h1 className="text-4xl sm:text-3xl font-bold text-secondary">
+    <h1 className="text-xl md:text-3xl font-bold text-secondary">
       <span ref={textRef}></span>
       <span className="animate-blink">|</span>
     </h1>
@@ -61,7 +61,7 @@ const HeroSection = () => {
     gsap.from(leftRef.current, {
       x: -100,
       opacity: 0,
-      duration: 1,
+      duration: 2,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: leftRef.current,
@@ -74,7 +74,7 @@ const HeroSection = () => {
     gsap.from(rightRef.current, {
       x: 100,
       opacity: 0,
-      duration: 1,
+      duration: 2,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: rightRef.current,
@@ -85,22 +85,22 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="px-6 md:px-12 lg:px-20 xl:px-28 py-16">
+    <section className="px-6 md:px-12 lg:px-10 xl:px-28 py-4 md:py-16 mb-12 lg:mb-24">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div ref={leftRef} className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
           <p className="text-xl font-bold text-grey">Hi I’m</p>
-          <h2 className="text-7xl font-bold text-gray-900">Awais Saeed</h2>
+          <h2 className="text-5xl xl:text-7xl font-bold text-gray-900">Awais Saeed</h2>
           
           {/* Typing animated text */}
           <TypingText />
 
-          <p className="text-grey font-medium leading-relaxed">
+          <p className="text-grey text-xs md:text-base font-medium leading-relaxed">
             Looking to scale your search visibility, dominate Google rankings, and drive qualified traffic? You’ve just found the best SEO expert in Pakistan. I help global enterprises and local brands outrank their competition with tailored, ROI-focused SEO solutions.
           </p>
 
-          <div className="pt-4">
-            <button className="px-8 py-3 text-white font-[500] flex gap-4 items-center justify-center bg-secondary hover:bg-secondary/90 transition rounded-lg">
+          <div className="md:pt-4 flex justify-center items-center lg:items-start lg:justify-start">
+            <button className="px-8 py-3  text-white font-[500] flex gap-4 items-center justify-center bg-secondary hover:bg-secondary/90 transition rounded-lg">
               Let's Grow Your Business
               <FaBusinessTime color="#B2FAE3" size={25} />
             </button>
