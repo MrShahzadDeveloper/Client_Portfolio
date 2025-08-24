@@ -5,6 +5,7 @@ import { FaBusinessTime } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { TextPlugin } from 'gsap/TextPlugin';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -43,7 +44,8 @@ const TypingText = () => {
 
     typeLoop();
   }, []);
-
+  
+  
   return (
     <h1 className="text-xl md:text-3xl font-bold text-secondary">
       <span ref={textRef}></span>
@@ -55,7 +57,8 @@ const TypingText = () => {
 const HeroSection = () => {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
-
+  const navigate = useNavigate()
+  
   useEffect(() => {
     // Left content animation
     gsap.from(leftRef.current, {
@@ -69,7 +72,7 @@ const HeroSection = () => {
         toggleActions: 'play none none none',
       },
     });
-
+    
     // Right image animation
     gsap.from(rightRef.current, {
       x: 100,
@@ -83,7 +86,10 @@ const HeroSection = () => {
       },
     });
   }, []);
-
+  
+  const handleClick = () =>{
+    navigate("/contact")
+  }
   return (
     <section className="px-6 md:px-12 lg:px-10 xl:px-28 py-4 md:py-16 mb-12 lg:mb-24">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
@@ -99,7 +105,7 @@ const HeroSection = () => {
             Looking to scale your search visibility, dominate Google rankings, and drive qualified traffic? You’ve just found the best SEO expert in Pakistan. I help global enterprises and local brands outrank their competition with tailored, ROI-focused SEO solutions.
           </p>
 
-          <div className="md:pt-4 flex justify-center items-center lg:items-start lg:justify-start">
+          <div className="md:pt-4 flex justify-center items-center lg:items-start lg:justify-start" onClick={handleClick}>
             <button className="px-8 py-3  text-white font-[500] flex gap-4 items-center justify-center bg-secondary hover:bg-secondary/90 transition rounded-lg">
               Let's Grow Your Business
               <FaBusinessTime color="#B2FAE3" size={25} />

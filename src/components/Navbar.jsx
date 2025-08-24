@@ -52,7 +52,7 @@ const Navbar = () => {
           <Button
             label="Book a Meeting"
             onClick={handleClick}
-             classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
+            classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
           />
         </div>
 
@@ -64,9 +64,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu (only visible when open and on small screens) */}
+      {/* ✅ Fixed Mobile Dropdown Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 w-full bg-primary shadow-md px-6 py-4 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`lg:hidden fixed top-16 left-0 w-full bg-primary shadow-md px-6 py-4 md:mt-16 transition-all duration-300 ease-in-out overflow-hidden z-[9999] ${
           menuOpen
             ? "max-h-screen opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-2"
@@ -91,7 +91,7 @@ const Navbar = () => {
           <Button
             label="Book a Meeting"
             onClick={handleClick}
-             classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
+            classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
           />
         </div>
       </div>

@@ -23,12 +23,12 @@ const Footer = () => {
       <div className="flex flex-col px-6 md:px-12 lg:px-20 xl:px-28 py-10 space-y-12">
 
         {/* Contact Short */}
-        <div className="hidden md:flex flex-col md:flex-row justify-center gap-4 text-sm">
+        <div className="hidden md:flex flex-col md:flex-col lg:flex-row  justify-center gap-4 text-sm">
           <div className="flex items-center gap-2 border border-primary rounded-md py-6 px-8">
             <div className='bg-primary p-2 rounded-full'>
               <IoMdCall className="text-lg " color='#0B424E' />
             </div>
-            <span>+923365493220</span>
+            <span>+92 3365493220</span>
           </div>
           <div className="flex items-center gap-2 border border-primary rounded-md py-6 px-8">
             <div className='bg-primary p-2 rounded-full'>

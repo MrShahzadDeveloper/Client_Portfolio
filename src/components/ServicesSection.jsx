@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Button from "../components/Button";
 import ServicesCard from "../components/ServicesCard";
-import seoServices from "../../data/ServicesData";
+import { seoServices } from "../../data/ServicesData";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,22 +72,23 @@ const ServicesSection = () => {
             ref={(el) => (cardsRef.current[index] = el)}
           >
             <ServicesCard
-              title={item.title}
+              id={item.id}
+              title={item.cardTitle}
               description={item.description}
               image={item.img}
             />
           </div>
         ))}
       </div>
-      <div className= "mt-8 flex justify-center items-center md:items-end">
-          <Button
-            label="See More Services"
-            classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
-            onClick={() => {
-              navigate("/services");
-            }}
-          />
-        </div>
+      <div className="mt-8 flex md:hidden justify-center items-center md:items-end">
+        <Button
+          label="See More Services"
+          classStyle="px-8 py-3 text-white bg-secondary hover:bg-secondary/90 transition rounded-lg"
+          onClick={() => {
+            navigate("/services");
+          }}
+        />
+      </div>
     </div>
   );
 };
