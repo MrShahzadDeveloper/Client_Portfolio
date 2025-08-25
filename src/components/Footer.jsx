@@ -29,7 +29,7 @@ const Footer = () => {
               <IoMdCall className="text-lg " color='#0B424E' />
             </div>
             <span>+92 3365493220</span>
-          </div>
+         </div>
           <div className="flex items-center gap-2 border border-primary rounded-md py-6 px-8">
             <div className='bg-primary p-2 rounded-full'>
               <IoMail className="text-lg" color='#0B424E' />
